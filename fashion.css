@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #47b8ff;
+    color: white;
+    padding: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+p{
+    font-size: 30px;
+}
+section#home {
+    background-color:#ffb3de ;
+    padding: 4rem;
+    border-radius: 8px;
+}
+
+section#about {
+    background-color: #f4bbff;
+    padding: 4rem;
+    border-radius: 8px;
+}
+
+section#contact {
+    background-color: #fafad2;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+section#gallery {
+    background-color: #e7feff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+section#todo {
+    background-color: #fff0f5;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+    font: size 40px;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5rem;
+}
+
+form input, form textarea, form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}

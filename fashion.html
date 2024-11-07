@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Boutique</title>
+    <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Hey...!Beautiful.Welcome to Fashion Boutique</h1>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Td6-6l4d3yrtnlUIxgxdbQHaF7&pid=Api&P=0&h=180" alt="Fashion Boutique">
+            <p style="font-family:Brush Script MT">Unlock your personal style with our latest collection.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p style="font-family:Brush Script MT">We are a premier fashion boutique offering the latest trends in clothing, accessories, and more. Our collection is curated to provide you with the best fashion experience.</p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.X8Y__AMUDUDfLVVVGmugLgHaEK&pid=Api&P=0&h=180" alt="About Us">
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <label for="file">Upload Image:</label>
+                <input type="file" id="file" name="file" accept="image/*">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+       <section id="gallery">
+            <h2>Gallery</h2>
+            <div id="image-gallery">
+                <figure>
+                <img src="saree.jpeg" alt="Saree's">
+                <figcaption>Saree's</figcaption>
+                </figure>
+                <figure>
+                <img src="lehanga,jpeg.jpg" alt="lehanga">
+                <figcaption>Lehanga's</figcaption>
+                </figure>
+                <figure>
+                <img src="kurthi&dress.jpeg" alt="kurthi">
+                <figcaption>Kurthi&Dress</figcaption>
+                </figure>
+                <figure>
+                <img src="westernware.jpg" alt="westernware">
+                <figcaption>Westernware</figcaption>
+                </figure>
+                <figure>
+                    <img src="frocks.jpg" alt="frocks">
+                    <figcaption>Frocks</figcaption>
+                    </figure>
+                <figure>
+                <img src="jewellery.jpg" alt="jewellery">
+                <figcaption>Jewellery</figcaption>
+                </figure>
+                <figure>
+                <img src="handbags.jpeg" alt="Handbags">
+                <figcaption>Handbags</figcaption>
+                </figure>
+                <figure>
+                <img src="beauty products.jpeg" alt="Beautyproduct">
+                <figcaption>Beautyproducts</figcaption><figure></figure>
+                </figure>
+            </div>
+            <input type="text" id="image-url" placeholder="Enter image URL">
+            <button id="add-image">Add Image</button>
+        </section>
+        <section id="todo">
+            <h2>To-Do List</h2>
+            <input type="text" id="new-task" placeholder="New task">
+            <button id="add-task">Add Task</button>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+    <script src="fashion.js"></script>
+</body>
+</html>
